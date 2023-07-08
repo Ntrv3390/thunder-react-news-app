@@ -3,6 +3,7 @@ import React, { Component } from "react";
 export class Navbar extends Component {
   render() {
     const myStyle = {
+      boxShadow: "1px 1px 5px 1px rgba(0, 0, 0, 0.4)",
       position: "fixed",
       width: "100%",
       top: "0",
