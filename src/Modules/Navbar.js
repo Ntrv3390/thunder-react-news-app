@@ -1,19 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 
-export class Navbar extends Component {
-  render() {
-    const myStyle = {
-      boxShadow: "1px 1px 5px 1px rgba(0, 0, 0, 0.4)",
-      position: "fixed",
-      width: "100%",
-      top: "0",
-      zIndex: "10",
-    };
+const Navbar = () => {
     return (
       <nav
-        className="navbar navbar-expand-lg navbar-dark bg-dark"
-        style={myStyle}
-      >
+        className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" >
+        <div className="container-fluid">
         <a className="navbar-brand mx-3" href="/">
           Thunder - News App
         </a>
@@ -54,10 +45,10 @@ export class Navbar extends Component {
               </a>
             </li>
           </ul>
-        </div>
+      </div>
+      </div>
       </nav>
     );
   }
-}
 
 export default Navbar;
