@@ -9,7 +9,7 @@ import { BrowserRouter as Router,
 
 const App = () => {
   const pageSize = 12;
-  const apiKey = "4315ac7110494412ba48c04d539acfcd";
+  const apiKey = process.env.REACT_APP_NEWS_API_KEY;
     return (
       <>
         <Navbar/>
