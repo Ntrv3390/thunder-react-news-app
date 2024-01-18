@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const News = (props) => {  
   const [articles, setArticles] = useState([]);
   const [page, setPage] = useState(1);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [totalResults, setTotalResults] = useState(0);
   
   const updateNews = async () =>
