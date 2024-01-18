@@ -22,7 +22,6 @@ const News = (props) => {
     window.scrollTo(0, 0);
   }
   useEffect(() => {
-    console.log('useEffect is running');
     updateNews();
   },[])
   
@@ -36,9 +35,9 @@ const News = (props) => {
     setPage(nextPage);
     updateNews();
   }
-    const containerStyle = {
-        margin:"60px"
-    }
+  const containerStyle = {
+    margin:"60px"
+  }
     return (
       <>
       <div className="container mt-5 mb-5" >
